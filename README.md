@@ -4,7 +4,7 @@ Tool based on [CobaltStrikeParser](https://github.com/Sentinel-One/CobaltStrikeP
 ![alt text](https://github.com/hariomenkel/CobaltSploit/raw/main/CS.PNG)
 
 ## Description
-Use `exploit.py` to start spamming a server with fake beacons
+Use `exploit.py` to start spamming a server with malicious tasks
 
 ## Usage
 ```
