@@ -1,7 +1,7 @@
 # CobaltSpam
 Tool based on [CobaltStrikeParser](https://github.com/Sentinel-One/CobaltStrikeParser) from SentinelOne which can be used to DoS a CobaltStrike TeamServer (4.2 or 4.3) leveraging CVE-2021-36798 (HotCobalt) discovered by SentinelOne
 
-![alt text](hhttps://github.com/hariomenkel/CobaltSploit/raw/main/CS.PNG)
+![alt text](https://github.com/hariomenkel/CobaltSploit/raw/main/CS.PNG)
 
 ## Description
 Use `exploit.py` to start spamming a server with fake beacons
