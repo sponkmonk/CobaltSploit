@@ -1,21 +1,28 @@
 # CobaltSpam
-Tool based on [CobaltStrikeParser](https://github.com/Sentinel-One/CobaltStrikeParser) from SentinelOne which can be used to spam a CobaltStrike server with fake beacons
+Tool based on [CobaltStrikeParser](https://github.com/Sentinel-One/CobaltStrikeParser) from SentinelOne which can be used to DoS a CobaltStrike TeamServer (4.2 or 4.3) leveraging CVE-2021-36798 (HotCobalt) discovered by SentinelOne
 
 ![alt text](https://github.com/hariomenkel/CobaltSpam/blob/master/CS.PNG?raw=true)
 
 ## Description
-Use `spam.py` to start spamming a server with fake beacons
+Use `exploit.py` to start spamming a server with fake beacons
 
 ## Usage
 ```
-usage: spam.py [-h] [-u URL | -f FILE]
+usage: exploit.py [-h] [-u URL | -f FILE]
 
 optional arguments:
+ptional arguments:
   -h, --help            show this help message and exit
-  -u URL, --url URL
-  -f FILE, --file FILE
-  --use_tor             (Optional, uses Tor to send beacons - please see Prerequisites!)
-
+  -u URL, --url URL     Target a single URL
+  -f FILE, --file FILE  Read targets from text file - One CS server per line
+  --print_config PRINT_CONFIG
+                        Print the beacon config
+  --use_tor USE_TOR     Should tor be used to connect to target?
+  --publish_to_threatfox PUBLISH_TO_THREATFOX
+                        Publish your findings to ThreatFox
+  --parse_only PARSE_ONLY
+                        Only download beacon and parse it without spamming
+  --max_hits MAX_HITS   Send maximum amount of exploit attempts (0 for endless) Default is 200
 ```
 
 ## Note
